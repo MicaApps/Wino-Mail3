@@ -3034,7 +3034,7 @@ namespace Wino.Core.Domain
 	
 
         /// <summary>
-		/// Wino offers 3 accounts to start with for free. If you need more than 3 accounts, please upgrade
+		/// Wino offers 3 accounts
 		/// </summary>
 		public static string WinoUpgradeDescription => Resources.GetTranslatedString(@"WinoUpgradeDescription");	
 	

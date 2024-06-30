@@ -507,9 +507,12 @@
             Grid.RowSpan="2"
             Grid.ColumnSpan="2"
             Background="{ThemeResource WinoApplicationBackgroundColor}"
-            IsHitTestVisible="False" />
+            IsHitTestVisible="False" >
 
-        <muxc:NavigationView
+            <Grid Height="1" Margin="0 46" VerticalAlignment="Top" Background="#10000000"/>
+        </Grid>
+
+            <muxc:NavigationView
             x:Name="navigationView"
             Grid.Row="1"
             Grid.ColumnSpan="3"
@@ -531,7 +534,16 @@
             PaneOpening="NavigationPaneOpening"
             ScrollViewer.VerticalScrollBarVisibility="Hidden"
             SelectedItem="{x:Bind ViewModel.SelectedMenuItem, Mode=TwoWay}"
-            SelectionChanged="MenuSelectionChanged">
+            SelectionChanged="MenuSelectionChanged"
+            Background="#08FFFFFF">
+            
+            <muxc:NavigationView.Resources>
+                <!--<Thickness x:Key="NavigationViewContentMargin">0,50,0,0</Thickness>-->
+                <SolidColorBrush x:Key="NavigationViewContentBackground"
+         Color="Transparent" />
+                <SolidColorBrush x:Key="NavigationViewContentGridBorderBrush"
+         Color="Transparent" />
+            </muxc:NavigationView.Resources>
             <muxc:NavigationView.ContentTransitions>
                 <TransitionCollection>
                     <AddDeleteThemeTransition />
