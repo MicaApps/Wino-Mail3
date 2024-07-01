@@ -306,7 +306,7 @@
                                 Foreground="{x:Bind helpers:XamlHelpers.GetSolidColorBrushFromHex(Parameter.TextColorHex), Mode=OneWay}"
                                 Style="{StaticResource BodyTextBlockStyle}"
                                 Text="{x:Bind FolderName, Mode=OneWay}"
-                                TextWrapping="WrapWholeWords" />
+                                TextWrapping="NoWrap" />
                         </Grid>
 
                         <TextBlock
@@ -316,7 +316,7 @@
                             FontWeight="{x:Bind helpers:XamlHelpers.GetFontWeightBySyncState(IsSelected), Mode=OneWay}"
                             Style="{StaticResource BodyTextBlockStyle}"
                             Text="{x:Bind FolderName, Mode=OneWay}"
-                            TextWrapping="WrapWholeWords" />
+                            TextWrapping="NoWrap" />
                     </Grid>
                 </muxc:NavigationViewItem.Content>
             </controls:WinoNavigationViewItem>
