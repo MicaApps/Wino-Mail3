@@ -610,7 +610,7 @@
                                     <Style TargetType="ListViewItem">
                                         <Setter Property="HorizontalContentAlignment" Value="Stretch" />
                                         <Setter Property="VerticalContentAlignment" Value="Stretch" />
-                                        <Setter Property="Margin" Value="0,12" />
+                                        <Setter Property="Margin" Value="0,0" />
                                         <Setter Property="Padding" Value="0" />
                                     </Style>
                                 </ListView.Resources>
@@ -622,7 +622,7 @@
                                             CornerRadius="4">
                                             <TextBlock
                                                 Margin="12,0"
-                                                HorizontalAlignment="Center"
+                                                HorizontalAlignment="Left"
                                                 VerticalAlignment="Center"
                                                 FontWeight="SemiBold"
                                                 Text="{x:Bind helpers:XamlHelpers.GetMailGroupDateString(Group)}" />
@@ -749,10 +749,9 @@ Background="{ThemeResource SystemControlAcrylicElementBrush}">
                 <AppBarButton
                     Grid.Column="6"
                     IsEnabled="{x:Bind ViewModel.HasSelectedItems, Mode=OneWay}"
-                    Width="40" Height="64">
-                    <Button.Content>
-                        <controls:WinoFontIcon FontSize="20" Icon="More" />
-                    </Button.Content>
+                    Width="40" Height="64"
+                    Icon="More">
+                    
                     <Button.Flyout>
                         <MenuFlyout AreOpenCloseAnimationsEnabled="False" Placement="BottomEdgeAlignedLeft">
                             <MenuFlyoutItem Command="{x:Bind ViewModel.MailOperationCommand}" Text="{x:Bind domain:Translator.MailOperation_SetFlag}">
