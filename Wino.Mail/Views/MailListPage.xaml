@@ -422,8 +422,7 @@
             x:Name="ReaderGridContainer"
             Grid.Column="0"
             Padding="5,0,0,0"
-            Background="{ThemeResource WinoContentZoneBackgroud}"
-            BorderBrush="{StaticResource CardStrokeColorDefaultBrush}"
+            
             BorderThickness="1"
             CornerRadius="7">
             <Grid x:Name="ReaderGrid">
