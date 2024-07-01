@@ -253,18 +253,19 @@ namespace Wino.Views
         private async Task UpdateEditorThemeAsync()
         {
             await DOMLoadedTask.Task;
+            await InvokeScriptSafeAsync("ChangePrefferedTheme('light')");
 
             if (ViewModel.IsDarkWebviewRenderer)
             {
-                Chromium.CoreWebView2.Profile.PreferredColorScheme = CoreWebView2PreferredColorScheme.Dark;
+                //Chromium.CoreWebView2.Profile.PreferredColorScheme = CoreWebView2PreferredColorScheme.Dark;
 
-                await InvokeScriptSafeAsync("SetDarkEditor();");
+                //await InvokeScriptSafeAsync("SetDarkEditor();");
             }
             else
             {
-                Chromium.CoreWebView2.Profile.PreferredColorScheme = CoreWebView2PreferredColorScheme.Light;
+                //Chromium.CoreWebView2.Profile.PreferredColorScheme = CoreWebView2PreferredColorScheme.Light;
 
-                await InvokeScriptSafeAsync("SetLightEditor();");
+                //await InvokeScriptSafeAsync("SetLightEditor();");
             }
         }
 
