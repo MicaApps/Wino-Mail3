@@ -151,7 +151,7 @@
     <!--  Attachments and WebView2  -->
     <Grid
         x:Name="RendererGridFrame"
-        Padding="7,0"
+        Padding="0,0"
         RowSpacing="7">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -159,10 +159,7 @@
         </Grid.RowDefinitions>
 
         <Border
-            Background="{ThemeResource WinoContentZoneBackgroud}"
-            BorderBrush="{StaticResource CardStrokeColorDefaultBrush}"
-            BorderThickness="1"
-            CornerRadius="7">
+            >
             <Grid Margin="8,8,8,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -369,17 +366,16 @@
 
         <Border
             Grid.Row="1"
-            Background="{ThemeResource WinoContentZoneBackgroud}"
-            BorderBrush="{StaticResource CardStrokeColorDefaultBrush}"
-            BorderThickness="0"
-            CornerRadius="7">
-            <Grid Margin="1" CornerRadius="7">
+           
+           >
+            <Grid Margin="0" CornerRadius="0">
                 <Grid Background="White" Visibility="{x:Bind IsDarkEditor, Converter={StaticResource ReverseBooleanToVisibilityConverter}, Mode=OneWay}" />
 
                 <controls:WebView2
                     x:Name="Chromium"
                     FontFamily="Segoe UI"
-                    NavigationStarting="WebViewNavigationStarting" />
+                    NavigationStarting="WebViewNavigationStarting"
+                    Background="Transparent"/>
 
                 <muxc:ProgressRing
                     Width="50"

@@ -22,7 +22,7 @@ namespace Wino.Services
             _configurationService = configurationService;
 
             openPaneLength = _configurationService.Get(OpenPaneLengthKey, 320d);
-            _mailListPaneLength = _configurationService.Get(MailListPaneLengthKey, 420d);
+            _mailListPaneLength = _configurationService.Get(MailListPaneLengthKey, 350d);
 
             PropertyChanged += ServicePropertyChanged;
         }
