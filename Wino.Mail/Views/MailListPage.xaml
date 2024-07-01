@@ -63,7 +63,7 @@
             <Grid
                 Margin="6,2"
                 AllowFocusOnInteraction="False"
-                Background="{ThemeResource MailListHeaderBackgroundColor}"
+                
                 CornerRadius="6">
                 <TextBlock
                     Padding="12"
@@ -618,7 +618,7 @@
                                     <DataTemplate x:DataType="ICollectionViewGroup">
                                         <Grid
                                             Margin="4,0"
-                                            Background="{ThemeResource MailListHeaderBackgroundColor}"
+                                            
                                             CornerRadius="4">
                                             <TextBlock
                                                 Margin="12,0"
