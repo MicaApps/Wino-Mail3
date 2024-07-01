@@ -408,7 +408,7 @@
         </Grid>
     </wino:BasePage.ShellContent>
 
-    <Grid x:Name="RootGrid" Padding="0,0,0,7">
+    <Grid x:Name="RootGrid" Padding="0,0,0,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition
                 x:Name="ReaderColumn"
