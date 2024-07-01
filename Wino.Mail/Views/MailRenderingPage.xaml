@@ -158,8 +158,7 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Border
-            >
+        <Border>
             <Grid Margin="8,8,8,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -365,9 +364,7 @@
         </Border>
 
         <Border
-            Grid.Row="1"
-           
-           >
+            Grid.Row="1">
             <Grid Margin="0" CornerRadius="0">
                 <Grid Background="White" Visibility="{x:Bind IsDarkEditor, Converter={StaticResource ReverseBooleanToVisibilityConverter}, Mode=OneWay}" />
 
